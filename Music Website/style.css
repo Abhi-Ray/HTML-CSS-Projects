@@ -1,0 +1,135 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/image.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar{
+    width: 95%;
+    display:flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.logo img{
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+    padding: 15px 15px;
+    margin : 0 10px;
+    align-items: center;
+}
+
+.items li {
+    
+   display :inline-block;
+align-items: center;
+justify-content: center;
+
+}
+.items li a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size:12px ;
+   padding: 5px 10px;
+   margin: 0 10px;
+color:#5f5f5f;
+transition: box-shadow .25s;
+}
+.items li a:hover{
+    border:1px solid #5f5f5f;
+    border-radius: 20px;
+box-shadow: 0 1px 2px #5f5f5f;
+}
+.row{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    flex-basis: auto;
+}
+.left{
+    width: 50%;
+    position: relative;
+  margin-top: 4%;
+  margin-left: 4%;
+   font-weight: 900;
+    font-size:70px ;
+    letter-spacing: 2.5px;
+    line-height: 85px;
+    color: white;
+}
+
+.right{
+    color: #5f5f5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 28%;
+    margin-top: 6%;
+}
+
+.right img{
+    padding-left: 6px;
+    width: 50px;
+    height:50px;
+cursor: pointer;
+}
+
+.rigth p{
+    transition: text-shadow .25s;
+}
+.right p:hover{
+text-shadow: 0 1px 1px #5f5f5f;
+cursor: pointer;
+}
