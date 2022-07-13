@@ -1,0 +1,219 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+
+}
+.navbar{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo{
+    margin:1rem 2rem;
+    width: 2rem;
+    height:2rem;
+cursor: pointer;
+}
+.navbar ul {
+    margin-right: 4rem;
+}
+.navbar ul li{
+    display: inline-block;
+    margin:1rem 1rem;
+    margin-right: 1rem;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:#000;
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: .05rem;
+    cursor: pointer;
+
+}
+
+.menu{
+    width: 1rem;
+    height: 1rem;
+cursor: pointer;
+}
+
+.navbar ul li a:hover{
+    color:#ff5ea2;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 0;
+}
+
+.col1{
+    flex-basis: 40%;
+    margin-left: 6rem;
+    position: relative;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    color: #000;
+    line-height: 3.5rem;
+
+}
+
+h3{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #707070;
+
+}
+p{
+    margin-top: .6rem;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #b7b7b7;
+
+}
+
+
+h4{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #000;
+    letter-spacing: .1rem;
+
+}
+
+.button{
+    margin-top: 1.5rem;
+    border-radius: .7rem;
+    padding: .5rem .8rem;
+   width: 15%;
+   display: flex;
+   align-items: center;
+
+    background: linear-gradient(to right,#fb5283, #ff3527);
+}
+.button button{
+    outline:none;
+    border:none;
+    background: none;
+    cursor: pointer;
+    flex-basis: 100%;
+    color: white;
+}
+
+.col1::after{
+    content: '';
+    width: .5rem;
+    height: 57%;
+    background: linear-gradient(#ff469f,#ff6062);
+    position: absolute;
+    left: -2rem;
+    top:.5rem;
+}
+
+.col2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    
+}
+.col2 .image{
+    width: 75%;
+}
+
+.colorbox{
+
+    position: absolute;
+    right: 150px;
+    top :0;
+    background: linear-gradient(#ff469f,#ff6062);
+    border-radius: 20px 0 0 20px;
+    height:100% ;
+    width: 60%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+.add img{
+    width: 35px;
+    margin-bottom: 5px;
+
+}
+.add{
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.add p:hover{
+    color: #000;
+    font-weight: 700;
+}
+
+.icons{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icons img{
+    margin: 1rem 1rem;
+width: 1rem;
+height: 1rem;
+cursor: pointer;
+}
